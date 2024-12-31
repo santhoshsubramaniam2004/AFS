@@ -1,23 +1,16 @@
-async function funname()
+async function funname(){
+    setTimeout(()=>{
+        console.log("Hello");
+    },5000);
 {
-    return "Hello"
+    console.log(await "Hello");
 }
-arrowFunName=async()=>
-{
-    return"KEC"
+arrowFunName=async()=>{
+    setTimeout(()=>{
+        console.log("KEC");
+    },4000);
+    console.log(await "KEC");
 }
 
 console.log(funname());
-console.log(arrowFunName());
-
-async function funname()
-{
-    console.log("Hello");
-}
-arrowFunName=async()=>
-{
-    console.log("KEC");
-}
-
-funname();
-arrowFunName();
+console.log(arrowFunName());}
